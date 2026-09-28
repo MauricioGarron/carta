@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para ti ❤️</title>
+  
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Playfair+Display:ital,wght@0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Enlace a tu CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- REPRODUCTOR DE MÚSICA FLOTANTE (Esquina superior) -->
+  <div class="music-player">
+    <audio id="bgMusic" loop src="music/cancion.mp3"></audio>
+    <button id="musicBtn" class="music-btn" aria-label="Reproducir música">
+      <span id="musicIcon">▶️</span>
+      <span class="music-label">Nuestra canción</span>
+    </button>
+  </div>
+
+  <main class="mobile-container">
+
+    <!-- 1. PORTADA / HERO -->
+    <header class="section hero">
+      <span class="pill-tag">Para mi personita favorita</span>
+      <h1>Un pequeño rincón solo para ti</h1>
+      <p class="subtitle">Baja despacito...</p>
+      <div class="scroll-indicator">↓</div>
+    </header>
+
+    <!-- 2. CÓMO EMPEZÓ TODO (Introducción narrativa) -->
+    <section class="section story-intro">
+      <h2 class="section-title">Cómo empezó todo</h2>
+      <div class="card intro-card">
+        <p>A veces me pongo a pensar en el día en que te conocí y en cómo, sin darme cuenta, te convertiste en la parte más bonita de mis días.</p>
+        <p>Hice este espacio para que cuando lo veas, recuerdes todo lo especial que eres para mí.</p>
+      </div>
+    </section>
+
+    <!-- 3. LÍNEA DE TIEMPO / RECUERDOS CLAVE -->
+    <section class="section timeline-section">
+      <h2 class="section-title">Nuestra historia en momentos</h2>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-date">El primer día</span>
+          <div class="timeline-content card">
+            <h3>Cuando todo comenzó</h3>
+            <p>Esa primera conversación donde supe que había algo muy distinto en ti.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">Nuestra primera cita</span>
+          <div class="timeline-content card">
+            <h3>Los nervios del inicio</h3>
+            <p>La risa tonta, las ganas de que el tiempo no pasara y lo bien que me sentí a tu lado.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">Un día cualquiera</span>
+          <div class="timeline-content card">
+            <h3>Nuestras tardes simples</h3>
+            <p>Donde no necesitábamos hacer nada extraordinario para pasarla increíble.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. GALERÍA DE FOTOS (Polaroids verticales) -->
+    <section class="section gallery-section">
+      <h2 class="section-title">Momentos favoritos juntos</h2>
+      <p class="section-desc">Fotos que me devuelven a días felices</p>
+
+      <div class="polaroid-list">
+        <article class="polaroid">
+          <img src="img/foto1.jpg" alt="Recuerdo especial" loading="lazy" />
+          <p class="caption">Ese viaje que guardo en el corazón ✈️</p>
+        </article>
+
+        <article class="polaroid">
+          <img src="img/foto2.jpg" alt="Foto juntos" loading="lazy" />
+          <p class="caption">Tu sonrisa que arregla cualquier mal día ✨</p>
+        </article>
+
+        <article class="polaroid">
+          <img src="img/foto3.jpg" alt="Momento espontáneo" loading="lazy" />
+          <p class="caption">Espontáneos, pero siempre juntos 📸</p>
+        </article>
+
+        <article class="polaroid">
+          <img src="img/foto4.jpg" alt="Paseo o salida" loading="lazy" />
+          <p class="caption">Uno de mis días favoritos contigo ❤️</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. PEQUEÑOS DETALLES / LO QUE ME ENCANTA DE TI -->
+    <section class="section reasons-section">
+      <h2 class="section-title">Cosas que amo de ti</h2>
+      <div class="reasons-grid">
+        <div class="reason-card">
+          <span class="reason-num">01</span>
+          <p>Tu forma tan bonita y transparente de ser.</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-num">02</span>
+          <p>Cómo te emocionas cuando me cuentas algo que te apasiona.</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-num">03</span>
+          <p>La paz inmediata que siento cada vez que me das un abrazo.</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-num">04</span>
+          <p>Que contigo puedo ser 100% yo mismo, sin filtros.</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-num">05</span>
+          <p>Tu risa contagiosa que se queda en mi cabeza todo el día.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CITAS / FRASES NUESTRAS O DEDICATORIAS -->
+    <section class="section quote-section">
+      <div class="quote-card">
+        <blockquote>"Donde sea que estemos, si es contigo, es el lugar correcto."</blockquote>
+      </div>
+    </section>
+
+    <!-- 7. CARTA FINAL EXTENSA -->
+    <section class="section letter-section">
+      <div class="letter-paper">
+        <h2 class="letter-title">Una cartita para ti</h2>
+        <div class="letter-body">
+          <p>No suelo ponerme demasiado poético, pero quería dejar por escrito algo que a veces las palabras cotidianas no alcanzan a decir del todo.</p>
+          <p>Gracias por ser mi equipo, por escucharme, por tener paciencia y por enseñarme tantas cosas lindas con tu sola presencia.</p>
+          <p>Este camino juntos es de mis cosas preferidas en el mundo, y no lo cambiaría por nada.</p>
+        </div>
+        <p class="signature">Siempre tuyo ❤️</p>
+      </div>
+    </section>
+
+    <!-- 8. FINAL INTERACTIVO (Mensaje oculto / Sorpresa) -->
+    <section class="section surprise-section">
+      <div class="surprise-box">
+        <p class="surprise-text">¿Un último mensaje antes de cerrar?</p>
+        <button id="surpriseBtn" class="btn-surprise">Tócame aquí ✨</button>
+        <div id="hiddenGift" class="hidden-content">
+          <p class="final-words">Te amo muchísimo. Gracias por hacer mi vida más bonita cada día.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PIE DE PÁGINA SIMPLE -->
+    <footer class="footer">
+      <p>Hecho con mucho amor solo para ti</p>
+    </footer>
+
+  </main>
+
+  <!-- Enlace a tu JS -->
+  <script src="script.js"></script>
+</body>
+</html>
